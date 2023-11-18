@@ -1,3 +1,4 @@
+#code by Drago
 import tkinter as tk
 from tkinter import *
 
@@ -8,7 +9,7 @@ root.resizable(False,False)
 root.configure(bg='#17161b')
 
 equation=""
-
+#code by Drago
 def show(value):
     global equation
     equation+=value
@@ -29,7 +30,7 @@ def calculate():
             result="error"
             equation = ""
     lable_result.config(text=result)
-
+#code by Drago
 lable_result=Label(root,width=25,height=2,text="",font=("arial",30))
 lable_result.pack()
 
@@ -55,5 +56,5 @@ Button(root,text="0",width=11,height=1,font=("arial",30,"bold"),bd=1,fg="#fff",b
 
 Button(root,text=".",width=5,height=1,font=("arial",30,"bold"),bd=1,fg="#fff",bg="#2a2d36",command=lambda: show(".")).place(x=290,y=500)
 Button(root,text="=",width=5,height=3,font=("arial",30,"bold"),bd=1,fg="#fff",bg="#fe9037",command=lambda: calculate()).place(x=430,y=400)
-
+#code by Drago
 root.mainloop()
